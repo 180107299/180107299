@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<style>
+		.aaaa{
+		  text-decoration:line-through;
+		}
+        button{
+            text-decoration: none;
+            display: inline-block;
+            color:red;
+            padding: 20px 30px;
+            margin: 10px 20px;
+            border-radius: 10px;
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            background-size: 200% auto;
+            transition: .5s;
+        }
+	</style>
+    <script>
+      function onClick() {
+      "use script";
+      document.getElementById("a").className = "aaaa";
+  }
+  function onClick1() {
+      "use script";
+      document.getElementById("b").className = "aaaa";
+  }
+  function onClick2() {
+      "use script";
+      document.getElementById("c").className = "aaaa";
+  }
+  function onClick3() {
+      "use script";
+      document.getElementById("d").className = "aaaa";
+  }
+  function onClick4() {
+      "use script";
+      document.getElementById("e").className = "aaaa";
+  }</script>
+  </head>
+
+  <body>
+      <div id="tasks">
+      <div><button onclick="onClick()">Finish</button><span id="a">Finish web tasks</span></div>
+      <div><button onclick="onClick1()">Finish</button><span id="b">Go to gym</span></div>
+      <div><button onclick="onClick2()">Finish</button><span id="c">Clean home</span></div>
+      <div><button onclick="onClick3()">Finish</button><span id="d">Start project</span></div>
+      <div><button onclick="onClick4()">Finish</button><span id="e">Prepare to calculus</span></div>
+    </div>
+  </body>
+
+</html>
