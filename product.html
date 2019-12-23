@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width: width-device, initial-scale=1">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width"> 
+        <link rel="icon" href="monitor.png" />
+    
+        <title>Samsung Galaxy S10</title>
+    </head>
+    <body>
+    <section class="header">
+    <header>
+    
+    <div class="top_border">
+    <a href="Website.v2.html" ><img src="loog.png "style="box-shadow:2px;width:10%;border:2px black;border-radius:20px;"></a>
+    </header>
+
+
+    </section>
+    <section class="body">
+    <div>
+    <div class="title">
+        <p>Samsung Galaxy S10</p>
+    </div>
+   
+    <div class="container">
+            <div class="also">
+                    <div id="id1"><h2>Fast delivery</h2>
+                        <p>Delivery to every town in KZ</p>
+                        <p>Checking every product one by one</p>
+                        <p>Free delivey</p>
+                    </div>
+                    <div id="id2">
+                        <h2>Payment</h2>
+                        <p>Payment only after you took product</p>
+                        <p>With bank card</p>
+                        <p>For credit</p>
+                    </div>
+                    <div id="id3">
+                        <h2>Guarantee</h2>
+                        <p>Official Guarantee 12 months</p>
+                    </div>
+                </div>
+        
+            <div class="mySlides">
+              <img src="cat2.jpg" style="width:30%">
+            </div>
+           
+            <div class="mySlides">
+              <img src="cat1.1.jpg" style="width:30%">
+            </div>
+            
+          
+            <div class="mySlides">
+              <img src="cat1.2.jpg" style="width:30%">
+            </div>
+              
+            <div class="mySlides">
+              <img src="cat1.3.jpg" style="width:30%">
+            </div>
+
+
+            <div class="charac">
+                    <h3>Screen Size, inch: 5.1<br>
+                            Screen Resolution: 2560 x 1440 [16: 9]<br>
+                            Matrix Type: Super AMOLED<br>
+                            RAM: 3 GB<br>
+                            The amount of internal memory: 32 GB<br>
+                            Processor Model: 7420<br>
+                            CPU Frequency: 2.1 GHz + 1.5 GHz<br>
+                            Resolution of the main camera: 16 megapixels<br>
+                            Front camera resolution: 5 megapixels<br>
+                            Wireless Interfaces: Wi-Fi, Bluetooth, NFC<br>
+                            Battery capacity: 2600 mAh</h3></div>
+                            
+          
+            <div class="row">
+                    <div class="column">
+                      <img class="slide" src="cat2.jpg" style="width:30%" onclick="currentSlide(1)" >
+                    </div>
+                    <div class="column">
+                      <img class="slide" src="cat1.1.jpg" style="width:30%" onclick="currentSlide(2)" >
+                    </div>
+                    <div class="column">
+                      <img class="slide" src="cat1.2.jpg" style="width:30%" onclick="currentSlide(3)" >
+                    </div>
+                    <div class="column">
+                        <img class="slide" src="cat1.3.jpg" style="width:30%"onclick="currentSlide(4)">
+                    </div>
+            </div>
+          
+            </div>
+            
+    </div><br>
+
+    
+
+    </section>
+    <section class="footer"> 
+            <div id="id12">© 2018—2019 website "YourElectronicStore"<br> 
+                Internet site "YourElectronicStore online store". Household and computer equipment, components, smartphones and accessories in years. Almaty, (Aktau) and other cities of Kazakhstan.
+                
+                </div>
+
+
+    </section>
+    </body>
+    <style>
+    body{
+    }
+    #txt{   
+        text-align:center;
+        font-size:40px;
+    }
+    .title{
+        font-size:40px;
+    }
+    * {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.container {
+  position: relative;
+}
+.mySlides {
+  display: none;
+  text-align:center;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+
+
+
+
+.row{
+    flex: content;
+    display: inline;
+    grid-template-rows: min-content;
+}
+
+
+.column {
+  float: left;
+  width: 20%;
+  margin:px;
+}
+.slide {
+  opacity: 0.6;
+}
+.charac{
+}
+
+.active,
+.slide:hover {
+  opacity: 1;
+}
+.char{
+    float:right;
+    display: inline-block;
+    font-size:20px;
+}
+.also{
+    display: inline-block;
+    float:right;
+}
+#id1{
+    border:solid transparent;
+    margin:20px;
+}
+#id2{
+    border:solid transparent;
+    margin:20px;
+}
+#id3{
+    border:solid transparent;
+    margin:20px;
+}
+#id12{
+        text-align:center;
+        color:gray;
+
+        border:solid black;
+        padding:30px;
+        margin-top:80px;
+        background-color: black;
+
+    }
+    @media screen and (max-width: 700px){
+       .row{
+        position:absolute;
+        margin-top:40px;
+        display: inline;
+        grid-template-rows: min-content;
+
+       }
+    }
+    </style>
+    <script>
+
+
+              var slideIndex = 1;
+                showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+    </script>
+
+</html>
